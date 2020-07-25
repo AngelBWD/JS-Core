@@ -1,0 +1,67 @@
+#app {
+    width: 400px;
+    height:400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.stop {
+    position: absolute;
+    width: 60px;
+    left: 172px;
+    top: -20px;
+    z-index: 2;
+}
+
+.wheel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 10px auto;
+    padding: 2px;
+    border-radius: 50px;
+    border-color: black;
+    border-width: 1px;
+    color: white;
+    background: #44606E;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    left: 170px;
+    top: 160px;
+}
+ 
+.btn2 {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 10px auto;
+    padding: 2px;
+    border-radius: 50px;
+    border-color: black;
+    border-width: 1px;
+    color: white;
+    background: #44606E;
+    position: fixed;
+    z-index: 2;
+    left: 654px;
+    top: 168px;
+}
+
+.btn:hover{
+    border-color: black;
+    color: white;
+    background: #F9AB44;
+}
+
+.btn2:hover {
+    border-color: black;
+    color: white;
+    background: #F9AB44;
+}
