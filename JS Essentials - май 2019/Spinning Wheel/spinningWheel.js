@@ -4,7 +4,10 @@ function luckyWheel() {
     const wheel = document.querySelector('.wheel');
     const startButton = document.querySelector('.btnStart');
     const newgameButton = document.querySelector('.btnNewGame');
+    const number = document.querySelector('.number');
     newgameButton.style.display = "none";
+
+
 
     let deg = 0
     startButton.addEventListener('click', () => {
@@ -14,7 +17,7 @@ function luckyWheel() {
         console.log(wheelArray);
         shifted = wheelArray.shift(1);
         let sector = (shifted - 1) * 20;
-
+        number.innerHTML = shifted;
 
         deg = ((Math.floor(Math.random() * 5) + 3) * 360) - (1 * sector - 8 + Math.floor((Math.random() * 18)));
         wheel.style.transition = 'all 5s ease-out';
