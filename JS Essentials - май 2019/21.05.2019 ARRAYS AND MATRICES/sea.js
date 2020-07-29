@@ -1,5 +1,5 @@
 function sea() {
-    let sea = [1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1];
+    let sea = [1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1];
     let island = [];
     let counter = 0;
 
@@ -14,13 +14,13 @@ function sea() {
         }
     }
 
-    let bigestIsland = Math.max(...island);
+    let biggestIsland = Math.max(...island);
     let element = 1;
     let max = island[0];
     let maxIndex = 0;
     let newArr = [];
 
-    if (bigestIsland === island[0]) {
+    if (biggestIsland === island[0]) {
         element = 1;
     } else {
 
@@ -38,6 +38,6 @@ function sea() {
     }
 
 
-    console.log(`Най-големият остров се състои от ${bigestIsland} единици площ, и започва на ${element} от морето!`);
+    console.log(`Най-големият остров се състои от ${biggestIsland} единици площ, и започва на ${element} елемент от морето!`);
 }
 sea()
