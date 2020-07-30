@@ -101,3 +101,7 @@ a {
     color: rgb(94, 92, 92);
     font-family: "Times New Roman", Times, serif;
 }
+
+.task {
+    margin:  0 4em;
+}

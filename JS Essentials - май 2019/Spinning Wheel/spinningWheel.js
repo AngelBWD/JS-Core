@@ -5,7 +5,9 @@ function luckyWheel() {
     const startButton = document.querySelector('.btnStart');
     const newgameButton = document.querySelector('.btnNewGame');
     const number = document.querySelector('.number');
+    const digits = document.querySelector('.digits');
     newgameButton.style.display = "none";
+    digits.innerHTML = [...wheelArray];
 
 
 
@@ -49,6 +51,7 @@ function luckyWheel() {
         startButton.style.pointerEvents = 'auto';
         startButton.style.display = 'block';
         wheelArray = newGame()
+        digits.innerHTML = [...wheelArray];
     });
 }
 
